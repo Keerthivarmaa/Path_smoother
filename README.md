@@ -138,7 +138,7 @@ The solution is designed with modularity in mind, leveraging ROS2's distributed 
 
 - For production-grade autonomous navigation, this project's components would typically be integrated into or replaced by the ROS2 Navigation Stack (Nav2). Nav2 provides:
 
-- Global Planner: Generates a path (similar to your raw_waypoints_publisher) on a costmap.
+- Global Planner: Generates a path on a costmap.
 
 - Local Planner: Generates velocity commands for obstacle avoidance and path following  using DWA or TEB.
 
@@ -146,7 +146,7 @@ The solution is designed with modularity in mind, leveraging ROS2's distributed 
 
 - State Estimators: For robust localization.
 
-- Path smoothing and trajectory generation could serve as a custom global path refinement layer before a local planner takes over. Your controller could be a custom local planner.
+- Path smoothing and trajectory generation could serve as a custom global path refinement layer before a local planner takes over. The controller could be a custom local planner.
 
 
 
